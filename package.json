@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Hotwire Example",
   "scripts": {
-    "build": "esbuild javascript/*.* --bundle --sourcemap --outdir=assets/builds --public-path=/assets"
+    "build": "esbuild javascript/*.* --bundle --minify --outdir=assets/builds --public-path=/assets"
   },
   "author": "felixabacajen17@gmail.com",
   "license": "ISC",
