@@ -1,2 +1,7 @@
+import { Application } from "@hotwired/stimulus";
+import { lazyLoadControllersFrom } from "@hotwired/stimulus-loading";
 import "@hotwired/turbo";
-import "./controllers";
+
+window.Stimulus = Application.start();
+
+lazyLoadControllersFrom("controllers", Stimulus);
