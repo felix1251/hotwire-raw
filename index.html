@@ -12,15 +12,16 @@
         "imports": {
           "@hotwired/turbo": "/javascript/turbo.es2017-esm.js",
           "@hotwired/stimulus": "/javascript/stimulus.js",
+          "@hotwired/stimulus-loading": "/javascript/stimulus-loading.js",
           "application": "/javascript/application.js",
-          "controllers/hello_controller": "/javascript/controllers/hello_controller.js",
-          "@hotwired/stimulus-loading": "/javascript/stimulus-loading.js"
+          "controllers/hello_controller": "/javascript/controllers/hello_controller.js"
         }
       }
     </script>
+    <link rel="modulepreload" href="/javascript/application.js" />
     <link rel="modulepreload" href="/javascript/turbo.es2017-esm.js" />
     <link rel="modulepreload" href="/javascript/stimulus.js" />
-    <link rel="modulepreload" href="/javascript/application.js" />
+    <link rel="modulepreload" href="/javascript/stimulus-loading.js" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="module">
